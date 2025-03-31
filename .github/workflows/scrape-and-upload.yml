@@ -1,4 +1,4 @@
-name: Scrape and Upload
+name: Scrape Rentpad and Upload
 
 on:
   schedule:
@@ -16,6 +16,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+
+      - name: Install Dependencies
+        run: npm install axios cheerio
 
       - name: Run Scraper
         run: node rentpad_scraper.js
