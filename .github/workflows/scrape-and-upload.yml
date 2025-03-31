@@ -1,4 +1,4 @@
-name: Scrape Rentpad and Upload
+name: Scrape and Upload
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  scrape:
+  puppeteer:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
@@ -17,13 +17,13 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Install Dependencies
-        run: npm install axios cheerio
+      - name: Install Puppeteer
+        run: npm install puppeteer
 
-      - name: Run Scraper
-        run: node rentpad_scraper.js
+      - name: Run Puppeteer Scraper
+        run: node rentpad_puppeteer_scraper.js
 
-      - name: Upload via FTP
+      - name: Upload to FTP
         uses: sebastianpopp/ftp-action@releases/v2
         with:
           host: ${{ secrets.FTP_HOST }}
