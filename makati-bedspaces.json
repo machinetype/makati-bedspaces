@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Female Bedspace in Poblacion",
+    "price": "\u20b14,800 / month",
+    "location": "Poblacion, Makati",
+    "link": "#",
+    "img": "https://via.placeholder.com/600x400?text=Poblacion+Room"
+  },
+  {
+    "title": "Shared Room near Ayala",
+    "price": "\u20b15,200 / month",
+    "location": "San Antonio, Makati",
+    "link": "#",
+    "img": "https://via.placeholder.com/600x400?text=San+Antonio+Bedspace"
+  },
+  {
+    "title": "Affordable Bedspace in Bangkal",
+    "price": "\u20b14,000 / month",
+    "location": "Bangkal, Makati",
+    "link": "#",
+    "img": "https://via.placeholder.com/600x400?text=Bangkal+Shared+Room"
+  }
+]
